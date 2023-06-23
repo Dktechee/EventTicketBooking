@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="Model.RegisterData" table="userata">
+        <id name="id" column="Number" length="5" type="integer">
+            <generator class="increment"></generator>
+        </id>
+        <property name="Fullname" length="50" column="Name" type="string"></property>
+        <property name="Username" length="50" column="Username" type="string"></property>  
+        <property name="Email" length="50" column="Email" type="string"></property>
+        <property name="phonenumber" length="50" column="Phonenumber" type="string"></property>
+        <property name="Password" length="50" column="Password" type="string"></property>
+        <property name="confirmpassworde" length="50" column="Confirmpassworde" type="string"></property>  
+       <property name="gender1" length="50" column="Gender" type="string"></property> 
+    
+    </class>
+  
+
+</hibernate-mapping>

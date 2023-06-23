@@ -1,0 +1,136 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(130, 106, 251);
+}
+
+.book-container {
+  position: relative;
+  max-width: 700px;
+  width: 80%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.book-container header {
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.book-container .book-form {
+  margin-top: 30px;
+}
+
+.book-form .book-input {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.book-input label {
+  color: #333;
+  font-weight: 500;
+}
+
+.book-form .book-input input,
+.book-select {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+
+.book-form .book-coloumn {
+  display: flex;
+  column-gap: 15px;
+}
+
+.book-form button {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  border: none;
+  margin-top: 30px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  background-color: rgba(130, 106, 251);
+}
+
+.book-form button:hover {
+  background-color: rgba(88, 56, 250);
+}
+
+.book-popup {
+  width: 400px;
+  background: #707070;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.book-popup img {
+  width: 100px;
+  margin-top: -50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.book-popup h2 {
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+  color: #fff;
+}
+
+.book-popup button {
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background: #6fd649;
+  color: #fff;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
